@@ -22,12 +22,8 @@ data = {
         "Accounting,Finance,Excel,Taxation",
         "Marketing,Social Media,SEO,Communication"]
 }
-data = {
-   .....
-}
 
 career_roadmap = {
-
 "Data Scientist": [
 "Learn Python",
 "Learn Statistics",
