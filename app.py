@@ -122,7 +122,7 @@ if st.button("Find Careers"):
 
     if top_career in career_roadmap:
        for step in career_roadmap[top_career]:
-    st.write("•", step)
+    st.write("•" + step)
     st.subheader("🤖 AI Career Insight")
 
 if top_career in career_explanation:
