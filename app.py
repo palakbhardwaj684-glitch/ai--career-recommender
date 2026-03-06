@@ -133,7 +133,7 @@ st.table(recommendations[["Career", "Match_Score"]])
 
 user_skills = set([s.strip().lower() for s in user_input.split(",")])
 
-    for _, row in recommendations.iterrows():
+for _, row in recommendations.iterrows():
         career = row["Career"]
         required_skills = set([s.strip().lower() for s in row["Required_Skills"].split(",")])
         missing_skills = required_skills - user_skills
