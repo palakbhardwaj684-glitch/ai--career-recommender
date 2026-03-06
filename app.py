@@ -116,7 +116,7 @@ if st.button("Find Careers"):
     recommendations = df.sort_values(by="Match_Score", ascending=False).head(3)
     top_career = recommendations.iloc[0]["Career"]
 
-    st.sucess(f"Best Career Recommendation: {top_career}")
+    st.success(f"Best Career Recommendation: {top_career}")
     
     st.subheader("🗺️ Career Roadmap")
 
@@ -127,17 +127,18 @@ if st.button("Find Careers"):
     st.subheader("🤖 AI Career Insight")
     
     if top_career in career_explanation:
-     st.write(random.choice(career_explanation[top_career]))
+      st.write(random.choice(career_explanation[top_career]))
+        
   st.subheader("🔮 Recommended Careers")
   st.dataframe(recommendations)
 
-user_skills = set([s.strip().lower() for s in user_input.split(",")])
+  user_skills = set([s.strip().lower() for s in user_input.split(",")])
 
-for _, row in recommendations.iterrows():
+  for _, row in recommendations.iterrows():
         career = row["Career"]
         required_skills = set([s.strip().lower() for s in row["Required_Skills"].split(",")])
         missing_skills = required_skills - user_skills
 
         st.write(f"**{career}** → Missing Skills: {', ' .join(missing_skills) if missing_skills else 'None 🎉'}")
         st.markdown("---")
-        st.write("Developed by palak | AI Career Advisor Project")
+st.write("Developed by palak | AI Career Advisor Project")
