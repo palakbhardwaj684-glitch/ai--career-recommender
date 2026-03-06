@@ -131,7 +131,7 @@ if st.button("Find Careers"):
 st.subheader("🔮 Recommended Careers")
 st.table(recommendations[["Career", "Match_Score"]])
 
-    user_skills = set([s.strip().lower() for s in user_input.split(",")])
+user_skills = set([s.strip().lower() for s in user_input.split(",")])
 
     for _, row in recommendations.iterrows():
         career = row["Career"]
