@@ -125,7 +125,7 @@ if st.button("Find Careers"):
             st.write("• " + step)
         
     st.subheader("🤖 AI Career Insight")
-    recommendations = df.sort_values(by="Match_Score", ascending=False)
+    
     if top_career in career_explanation:
      st.write(random.choice(career_explanation[top_career]))
 st.subheader("🔮 Recommended Careers")
