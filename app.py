@@ -128,8 +128,8 @@ if st.button("Find Careers"):
     
     if top_career in career_explanation:
      st.write(random.choice(career_explanation[top_career]))
-st.subheader("🔮 Recommended Careers")
-st.dataframe(recommendations)
+  st.subheader("🔮 Recommended Careers")
+  st.dataframe(recommendations)
 
 user_skills = set([s.strip().lower() for s in user_input.split(",")])
 
