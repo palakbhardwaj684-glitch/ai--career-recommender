@@ -121,11 +121,12 @@ if st.button("Find Careers"):
     top_career = recommendations.iloc[0]["Career"]
 
     st.sucess(f"Best Career Recommendation: {top_career}")
+    
     st.subheader("🗺️ Career Roadmap")
 
-if top_career in career_roadmap:
-    for step in career_roadmap[top_career]:
-        st.write("•", step)
+    if top_career in career_roadmap:
+       for step in career_roadmap[top_career]:
+    st.write("•", step)
     st.subheader("🤖 AI Career Insight")
 
 if top_career in career_explanation:
