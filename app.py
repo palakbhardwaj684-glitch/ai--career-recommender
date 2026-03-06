@@ -138,6 +138,6 @@ st.table(recommendations[["Career", "Match_Score"]])
         required_skills = set([s.strip().lower() for s in row["Required_Skills"].split(",")])
         missing_skills = required_skills - user_skills
 
-        st.write(f"**{career}** → Missing Skills: {', '.join(missing_skills) if missing_skills else 'None 🎉'}")
+        st.write(f"**{career}** → Missing Skills: {', ' .join(missing_skills) if missing_skills else 'None 🎉'}")
         st.markdown("---")
         st.write("Developed by palak | AI Career Advisor Project")
