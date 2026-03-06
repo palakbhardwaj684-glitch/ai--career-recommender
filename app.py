@@ -121,11 +121,12 @@ if st.button("Find Careers"):
     st.subheader("🗺️ Career Roadmap")
 
     if top_career in career_roadmap:
-       for step in career_roadmap[top_career]:
-    st.write("•" + step)
+        for step in career_roadmap[top_career]:
+            st.write("• " + step)
+        
     st.subheader("🤖 AI Career Insight")
 
-if top_career in career_explanation:
+    if top_career in career_explanation:
     st.write(random.choice(career_explanation[top_career]))
     st.subheader("🔮 Recommended Careers")
     st.table(recommendations[["Career", "Match_Score"]])
