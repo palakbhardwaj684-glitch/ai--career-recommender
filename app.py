@@ -4,11 +4,21 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 data = {
-    "Career": ["Data Scientist", "Web Developer", "AI Engineer", "UI/UX Designer"],
+    "Career": [
+        "Data Scientist", 
+        "Web Developer",
+        "AI Engineer",
+        "UI/UX Designer", 
+        "HR Manager",
+        "Accountant",
+        "Digital Marketer"],
     "Required_Skills": ["Python, Statistics, Machine Learning, Data Visualization",
         "HTML, CSS, JavaScript, React",
         "Python, Deep Learning, NLP, TensorFlow",
-        "Design Thinking, Figma, UX Research, Creativity"]
+        "Design Thinking, Figma, UX Research, Creativity",
+        "Communication,Leadership,Recruitment,People Mangement",
+        "Accounting,Finance,Excel,Taxation",
+        "Marketing,Social Media,SEO,Communication"]
 }
 
 df = pd.DataFrame(data)
