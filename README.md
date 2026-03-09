@@ -5,7 +5,7 @@ This project recommends the best career based on a user's skills using Machine L
 
 Working App:
 "https://ai--career-recommender-zwtqgfyibptxvcck5s8yce.streamlit.app/"
-
+-----
 Features
 • Career recommendation based on user skills  
 • Machine Learning based similarity matching  
@@ -41,6 +41,11 @@ Machine Learning (TF-IDF + Cosine Similarity)
 
 ---
 
-## Run Locally
+ Run Locally
 
 Install dependencies:
+pip install streamlit pandas
+scikit-learn
+
+Run the app:
+streamlit run app.py
